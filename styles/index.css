@@ -1,0 +1,24 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+    color: #111111;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+body {
+    background-color: #1f1f1f;
+}
