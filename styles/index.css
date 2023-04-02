@@ -186,3 +186,29 @@ nav ul li a {
     border-radius: 50px;
     font-weight: 500;
 }
+
+
+footer {
+    background-color: var(--dark-bg-solid);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em 7em;
+    height: 30em;
+    align-items: center;
+}
+
+footer nav ul {
+    flex-direction: column;
+    gap: .6em;
+}
+
+footer nav ul li{
+    width: 100%;
+    text-align: left;
+}
+
+footer p {
+    align-self: flex-end;
+    font-size: 2em;
+}
