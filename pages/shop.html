@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop | Funkoshop</title>
     <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/shop.css">
+
     <link rel="icon" type="img/svg" href="../img/branding/isotype.svg">
 </head>
 <body>
@@ -31,47 +33,69 @@
 
     </header>
 
-    <aside>
-
-        <article>
-            <form action="">
-                <label for="nombrebusqueda">BUSCAR</label>
-                <input type="text" name="nombrebusqueda" placeholder="Ítem o categoría...">
-                
-                <label for="ordenamiento">ORDENAR POR</label>
-                <select name="ordenamiento" id="">
-                    <option value="1">Mayor a menor</option>
-                    <option value="2" selected>Menor a mayor</option>
-                </select>
-
-                <p>PRECIO</p>
-                <label for="minprecio">MIN </label>
-                <input type="number" name="minprecio" id="" placeholder="0">
-                <label for="maxprecio"> - MÁX </label>
-                <input type="number" name="maxprecio" placeholder="0">
-
-                <p>FILTRAR</p>
-                <input type="checkbox" name="nuevos" id="">
-                <label for="nuevos">NUEVOS</label>
-                <input type="checkbox" name="ofertas" id="">
-                <label for="ofertas">OFERTAS</label>
-                <input type="checkbox" name="specialedition">
-                <label for="specialedition">EDICIÓN ESPECIAL</label>
-                <input type="checkbox" name="favoritos">
-                <label for="favoritos">FAVORITOS</label>
-            </form>
-
-        </article>
-    </aside>
+    
 
     <main class="container">
 
-        <section>
+        <aside>
+
+            <article>
+                <form action="">
+                    
+                    <div class="form-nomprod">
+                        <label for="nombrebusqueda" class="form-title">BUSCAR</label>
+                        <input type="text" name="nombrebusqueda" placeholder="Ítem o categoría...">
+                    </div>
+                    
+                    <div class="form-ordenamiento">
+                        <label for="ordenamiento" class="form-title">ORDENAR POR</label>
+                        <select name="ordenamiento" id="">
+                            <option value="1">Mayor a menor</option>
+                            <option value="2" selected>Menor a mayor</option>
+                        </select>
+                    </div>
+    
+                    <div class="form-precio">
+                        <p class="form-title">PRECIO</p>
+                        <label for="minprecio">MIN </label>
+                        <input type="number" name="minprecio" id="" placeholder="0">
+                        <label for="maxprecio"> - MÁX </label>
+                        <input type="number" name="maxprecio" placeholder="0">
+                    </div>
+    
+                    <div class="form-filtrado">
+                        <p class="form-title">FILTRAR</p>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="nuevos" id="">
+                                <label for="nuevos">NUEVOS</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="ofertas" id="">
+                                <label for="ofertas">OFERTAS</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="specialedition">
+                                <label for="specialedition">EDICIÓN ESPECIAL</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="favoritos">
+                                <label for="favoritos">FAVORITOS</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                </form>
+    
+            </article>
+        </aside>
+
+        <section class="shop-products">
             
             <ul>
 
                 <li>
-                    <article>
+                    <article class="card" style="grid-column: 1 / 2;grid-row:1">
                         <a href="#">
                             <picture>
                                 <img src="../img/star-wars/trooper-1.webp" alt="TROPPER">
@@ -86,7 +110,7 @@
                     </article>
                 </li>
                 <li>
-                    <article>
+                    <article class="card" style="grid-column: 2 / 3; grid-row:1">
                         <a href="#">
                             <picture>
                                 <img src="../img/pokemon/pidgeotto-1.webp" alt="PIDGEOTTO">
@@ -101,7 +125,7 @@
                     </article>
                 </li>
                 <li>
-                    <article>
+                    <article class="card">
                         <a href="#">
                             <picture>
                                 <img src="../img/harry-potter/luna-1.webp" alt="LUNA LOVEGOD">
@@ -116,7 +140,7 @@
                     </article>
                 </li>
                 <li>
-                    <article>
+                    <article class="card">
                         <a href="#">
                             <picture>
                                 <img src="../img/star-wars/trooper-1.webp" alt="TROPPER">
@@ -131,7 +155,7 @@
                     </article>
                 </li>
                 <li>
-                    <article>
+                    <article class="card">
                         <a href="#">
                             <picture>
                                 <img src="../img/pokemon/pidgeotto-1.webp" alt="PIDGEOTTO">
@@ -146,7 +170,7 @@
                     </article>
                 </li>
                 <li>
-                    <article>
+                    <article class="card">
                         <a href="#">
                             <picture>
                                 <img src="../img/harry-potter/luna-1.webp" alt="LUNA LOVEGOD">
@@ -161,7 +185,7 @@
                     </article>
                 </li>
                 <li>
-                    <article>
+                    <article class="card">
                         <a href="#">
                             <picture>
                                 <img src="../img/star-wars/trooper-1.webp" alt="TROPPER">
@@ -176,7 +200,7 @@
                     </article>
                 </li>
                 <li>
-                    <article>
+                    <article class="card">
                         <a href="#">
                             <picture>
                                 <img src="../img/pokemon/pidgeotto-1.webp" alt="PIDGEOTTO">
@@ -191,7 +215,7 @@
                     </article>
                 </li>
                 <li>
-                    <article>
+                    <article class="card">
                         <a href="#">
                             <picture>
                                 <img src="../img/harry-potter/luna-1.webp" alt="LUNA LOVEGOD">
@@ -251,5 +275,7 @@
 
     </footer>
 
+
+    
 </body>
 </html>

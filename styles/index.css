@@ -187,7 +187,7 @@ nav ul li a {
 
 .container {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 9rem auto;
 }
 
 #colecciones {
@@ -230,13 +230,16 @@ nav ul li a {
     padding: 2rem 0;
     text-align: center;
     color: var(--light-font-solid);
+    transition-duration: 1s;
 }
 
+.info-body a:hover {
+    box-shadow: 1px 1px 10px var(--dark-900);
+}
 
 
 #ult-lanzamientos {
     width: 100%;
-    margin-bottom: 9rem;
 }
 
 #ult-lanzamientos h2 {
