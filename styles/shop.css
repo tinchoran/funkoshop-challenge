@@ -49,7 +49,9 @@
     grid-template-columns: 20% 80%;
 }
 
-
+aside {
+    overflow: hidden;
+}
 aside article {
     margin-top: 3rem;
 }
@@ -61,7 +63,42 @@ aside article form {
 
 .form-title {
     font-size: var(--font-large);
+    font-weight: 600
 }
+
+form input{
+    font-size: var(--font-medium);
+    padding: .6rem 1rem;
+}
+
+.form-nomprod input, .form-precio input,.form-ordenamiento select {
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 90%;
+}
+
+.form-filtrado input {
+    height: var(--font-medium);
+}
+
+form div{ 
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+select {
+    font-size: var(--font-medium);
+    padding: .3rem;
+}
+
+.form-precio {
+    font-size: var(--font-medium);
+}
+
+
 
 
 .shop-products ul {
