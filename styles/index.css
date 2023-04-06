@@ -388,8 +388,20 @@ header {
     font-weight: 700;
 }
 
+/*-- FOOTER --*/
 
+.footer {
+    background-color: var(--dark-bg-solid);
+    padding: var(--spacing-68);
+}
 
+.footer__copy {
+    font-size: var(--font-medium);
+    text-align: center;
+    margin-top: var(--spacing-36);
+}
+
+/*-- ANIMATIONS --*/
 @keyframes fade {
     0% {
         opacity: 0;
