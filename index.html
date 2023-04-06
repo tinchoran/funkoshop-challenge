@@ -11,19 +11,40 @@
 <body>
     <header>
 
-        <nav>
+        <nav class="navbar container">
 
-            <picture>
+            <picture class="navbar__logo">
                 <a href="index.html">
                     <img src="./img/branding/logo_light_horizontal.svg" alt="Logotipo" id="logo">
                 </a>
             </picture>
 
-            <ul>
-                <li><a href="pages/shop.html">SHOP</a></li>
-                <li><a href="">CONTACTO</a></li>
-                <li><a href="">LOGIN</a></li>
-                <li><a href=""><img src="img/icons/cart-icon.svg" alt="Carrito de compra"></a></li>
+            <ul class="navbar__menu">
+                <li class="navbar__item with-submenu">
+                    <a href="pages/shop.html" class="navbar__link with-icon">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link">Funkos</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Remeras</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Llaveros</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar__item">
+                    <a href="" class="navbar__link">CONTACTO</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="" class="navbar__link">LOGIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="" class="navbar__cart">
+                        <img src="img/icons/cart-icon.svg" alt="Carrito de compra">
+                    </a>
+                </li>
             </ul>
 
         </nav>
@@ -89,7 +110,7 @@
             <ul>
                 <li>
                     <article class="card">
-                        <a href="#">
+                        <a href="./pages/item.html">
                             <picture>
                                 <img src="img/star-wars/trooper-1.webp" alt="TROPPER">
                             </picture>
@@ -104,7 +125,7 @@
                 </li>
                 <li>
                     <article class="card">
-                        <a href="#">
+                        <a href="./pages/item.html">
                             <picture>
                                 <img src="img/pokemon/pidgeotto-1.webp" alt="PIDGEOTTO">
                             </picture>
@@ -119,7 +140,7 @@
                 </li>
                 <li>
                     <article class="card">
-                        <a href="#">
+                        <a href="./pages/item.html">
                             <picture>
                                 <img src="img/harry-potter/luna-1.webp" alt="LUNA LOVEGOD">
                             </picture>
@@ -172,5 +193,7 @@
         </picture>
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
 </body>
 </html>
