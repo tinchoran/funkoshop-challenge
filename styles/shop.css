@@ -49,7 +49,7 @@
 .main-shop {
     display: grid;
     grid-template-columns: 1fr 8fr;
-    grid-template-areas: "aside section";
+    grid-template-areas: "aside catalog";
     padding: var(--spacing-68) 0;
 }
 
@@ -109,6 +109,32 @@
 
 
 /*--- PRODUCTS -----*/
-.products {
-    grid-area: section;
+.catalog {
+    grid-area: catalog;
+    padding: var(--spacing-16);
+}
+
+
+.catalog__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: var(--spacing-24);
+    row-gap: var(--spacing-36);
+}
+
+.card-item {
+    height: 100%;
+}
+
+.card-item__link {
+    height: 100%;
+    display: grid;
+}
+
+
+.card-item__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
