@@ -11,92 +11,105 @@
     <link rel="icon" type="img/svg" href="../img/branding/isotype.svg">
 </head>
 <body>
-    
     <header>
+        <nav class="navbar container">
 
-        <nav>
-
-            <picture>
+            <picture class="navbar__logo">
                 <a href="../index.html">
                     <img src="../img/branding/logo_light_horizontal.svg" alt="Logotipo" id="logo">
                 </a>
             </picture>
 
-            <ul>
-                <li><a href="">SHOP</a></li>
-                <li><a href="">CONTACTO</a></li>
-                <li><a href="">LOGIN</a></li>
-                <li><a href=""><img src="../img/icons/cart-icon.svg" alt="Carrito de compra"></a></li>
+            <ul class="navbar__menu">
+                <li class="navbar__item with-submenu">
+                    <a href=".pages/shop.html" class="navbar__link with-icon">SHOP<iconify-icon icon="tabler:chevron-down" class="chevron_down"></iconify-icon></a>
+                    <ul class="submenu">
+                        <li class="submenu__item">
+                            <a href="#" class="submenu__link">Funkos</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Remeras</a>
+                        </li>
+                        <li class="submenu__item">
+                            <a href="" class="submenu__link">Llaveros</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar__item">
+                    <a href="" class="navbar__link">CONTACTO</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="" class="navbar__link">LOGIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="" class="navbar__cart">
+                        <img src="../img/icons/cart-icon.svg" alt="Carrito de compra">
+                    </a>
+                </li>
             </ul>
 
         </nav>
 
-    </header>
+    </header><!--FINAL HEADER-->
+
+
 
     
 
-    <main class="container">
+    <main class="container main-shop">
 
-        <aside>
+        <aside class="aside">
 
-            <article>
-                <form action="">
-                    
-                    <div class="form-nomprod">
-                        <label for="nombrebusqueda" class="form-title">BUSCAR</label>
-                        <input type="text" name="nombrebusqueda" placeholder="Ítem o categoría...">
-                    </div>
-                    
-                    <div class="form-ordenamiento">
-                        <label for="ordenamiento" class="form-title">ORDENAR POR</label>
-                        <select name="ordenamiento" id="">
-                            <option value="1">Mayor a menor</option>
-                            <option value="2" selected>Menor a mayor</option>
-                        </select>
-                    </div>
-    
-                    <div class="form-precio">
-                        <p class="form-title">PRECIO</p>
-                        <label for="minprecio">MIN</label>
-                        <input type="number" name="minprecio" id="" placeholder="0">
-                        <label for="maxprecio">MÁX</label>
-                        <input type="number" name="maxprecio" placeholder="0">
-                    </div>
-    
-                    <div class="form-filtrado">
-                        <p class="form-title">FILTRAR</p>
-                        <ul>
-                            <li>
-                                <input type="checkbox" name="nuevos" id="">
-                                <label for="nuevos">NUEVOS</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="ofertas" id="">
-                                <label for="ofertas">OFERTAS</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="specialedition">
-                                <label for="specialedition">EDICIÓN ESPECIAL</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="favoritos">
-                                <label for="favoritos">FAVORITOS</label>
-                            </li>
-                        </ul>
-                    </div>
+            <form class="aside__form">
+                
+                <h4 class="form__title">BUSCAR</h4>
+                <input class="form__input" type="text" name="nombrebusqueda" placeholder="Ítem o categoría...">
 
-                </form>
+                <h4 class="form__title">ORDENAR POR</h4>
+                <select class="form__input" name="ordenamiento">
+                    <option value="1">Mayor a menor</option>
+                    <option value="2">Menor a mayor</option>
+                </select>
+
+                <h4 class="form__title">PRECIO</h4>
+                <label class="form__label" for="minprecio">MIN</label>
+                <input class="form__input" type="number" name="minprecio" id="" placeholder="0">
+                <label class="form__label" for="maxprecio" >MÁX</label>
+                <input class="form__input" type="number" name="maxprecio" placeholder="0">
+
+
+                <h4 class="form__title">FILTRAR</h4>
+                <ul class="checks-container">
+                    <li class="form__checks">
+                        <input class="form__checkbox" type="checkbox" name="nuevos" id="">
+                        <label class="form__label" for="nuevos">NUEVOS</label>
+                    </li>
+                    <li class="form__checks">
+                        <input class="form__checkbox" type="checkbox" name="ofertas" id="">
+                        <label class="form__label" for="ofertas">OFERTAS</label>
+                    </li>
+                    <li class="form__checks">
+                        <input class="form__checkbox" type="checkbox" name="specialedition">
+                        <label class="form__label" for="specialedition">EDICIÓN ESPECIAL</label>
+                    </li>
+                    <li class="form__checks">
+                        <input class="form__checkbox" type="checkbox" name="favoritos">
+                        <label class="form__label" for="favoritos">FAVORITOS</label>
+                    </li>
+                </ul>
+
+
+            </form>
     
-            </article>
         </aside>
 
-        <section class="shop-products">
+        <section class="productsclass="form__label" ">
             
             <ul>
 
                 <li>
                     <article class="card" style="grid-column: 1 / 2;grid-row:1">
-                        <a href="#">
+                        <a href="../pages/item.html">
                             <picture>
                                 <img src="../img/star-wars/trooper-1.webp" alt="TROPPER">
                             </picture>
@@ -111,7 +124,7 @@
                 </li>
                 <li>
                     <article class="card" style="grid-column: 2 / 3; grid-row:1">
-                        <a href="#">
+                        <a href="../pages/item.html">
                             <picture>
                                 <img src="../img/pokemon/pidgeotto-1.webp" alt="PIDGEOTTO">
                             </picture>
@@ -126,7 +139,7 @@
                 </li>
                 <li>
                     <article class="card">
-                        <a href="#">
+                        <a href="../pages/item.html">
                             <picture>
                                 <img src="../img/harry-potter/luna-1.webp" alt="LUNA LOVEGOD">
                             </picture>
@@ -141,7 +154,7 @@
                 </li>
                 <li>
                     <article class="card">
-                        <a href="#">
+                        <a href="../pages/item.html">
                             <picture>
                                 <img src="../img/star-wars/trooper-1.webp" alt="TROPPER">
                             </picture>
@@ -156,7 +169,7 @@
                 </li>
                 <li>
                     <article class="card">
-                        <a href="#">
+                        <a href="../pages/item.html">
                             <picture>
                                 <img src="../img/pokemon/pidgeotto-1.webp" alt="PIDGEOTTO">
                             </picture>
@@ -171,7 +184,7 @@
                 </li>
                 <li>
                     <article class="card">
-                        <a href="#">
+                        <a href="../pages/item.html">
                             <picture>
                                 <img src="../img/harry-potter/luna-1.webp" alt="LUNA LOVEGOD">
                             </picture>
@@ -186,7 +199,7 @@
                 </li>
                 <li>
                     <article class="card">
-                        <a href="#">
+                        <a href="../pages/item.html">
                             <picture>
                                 <img src="../img/star-wars/trooper-1.webp" alt="TROPPER">
                             </picture>
@@ -201,7 +214,7 @@
                 </li>
                 <li>
                     <article class="card">
-                        <a href="#">
+                        <a href="../pages/item.html">
                             <picture>
                                 <img src="../img/pokemon/pidgeotto-1.webp" alt="PIDGEOTTO">
                             </picture>
@@ -216,7 +229,7 @@
                 </li>
                 <li>
                     <article class="card">
-                        <a href="#">
+                        <a href="../pages/item.html">
                             <picture>
                                 <img src="../img/harry-potter/luna-1.webp" alt="LUNA LOVEGOD">
                             </picture>
@@ -241,41 +254,34 @@
 
     </main>
 
-    <footer>
+    <footer class="footer">
 
-        <article>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="">SHOP</a>
-                    </li>
-
-                    <li>
-                        <a href="#">REGISTRARSE</a>
-                    </li>
-
-                    <li>
-                        <a href="#">INGRESAR</a>
-                    </li>
-
-                    <li>
-                        <a href="#">CONTACTO</a>
-                    </li>
-                </ul>
-            </nav>
-        </article>
-
-        <p>All rights reserved 2022 - Funkoshop &copy;</p>
-
-        <picture>
-            <a href="../img/branding/isotype.svg">
+        <nav class="navbar container">
+            <ul class="navbar__items">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/shop.html">SHOP</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="#">REGISTRARSE</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="#">INGRESAR</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="#">CONTACTO</a>
+                </li>
+            </ul>
+            <picture>
                 <img src="../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
-            </a>
-        </picture>
+            </picture>
+        </nav>
+
+        <p class="footer__copy">All rights reserved 2022 - Funkoshop &copy;</p>
+
 
     </footer>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
     
 </body>
 </html>
